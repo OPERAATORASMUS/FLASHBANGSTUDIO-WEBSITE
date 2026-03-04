@@ -16,7 +16,7 @@
 
 html {
     scroll-behavior: smooth;
-    scroll-padding-top: 65px;
+    scroll-padding-top: 70px;
 }
 
 body {
@@ -99,7 +99,7 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 12px 35px;
+    padding: 14px 40px;
     background: rgba(5, 5, 5, 0.9);
     backdrop-filter: blur(10px);
     z-index: 1000;
@@ -107,19 +107,19 @@ a {
 }
 
 .logo img {
-    height: 32px;
+    height: 36px;
     filter: invert(0);
 }
 
 .nav-links {
     list-style: none;
     display: flex;
-    gap: 25px;
+    gap: 28px;
 }
 
 .nav-links li a {
     font-family: var(--font-heading);
-    font-size: 0.7rem;
+    font-size: 0.75rem;
     letter-spacing: 2px;
     font-weight: 700;
 }
@@ -138,9 +138,9 @@ a {
     background: transparent;
     border: 1px solid rgba(255, 255, 255, 0.3);
     color: var(--text-white);
-    padding: 6px 10px;
+    padding: 7px 11px;
     font-family: var(--font-heading);
-    font-size: 0.65rem;
+    font-size: 0.7rem;
     letter-spacing: 1px;
     font-weight: 700;
     cursor: pointer;
@@ -197,7 +197,7 @@ a {
 }
 
 .hero-content h1 {
-    font-size: 4.5vw;
+    font-size: 5vw;
     line-height: 1;
     margin: 0;
     letter-spacing: -2px;
@@ -209,19 +209,19 @@ a {
 }
 
 .hero-content p {
-    margin: 20px 0;
-    font-size: 0.95rem;
+    margin: 25px 0;
+    font-size: 1rem;
     letter-spacing: 4px;
     text-transform: uppercase;
 }
 
 .btn {
     display: inline-block;
-    padding: 12px 30px;
+    padding: 13px 35px;
     background: var(--bg-white);
     color: var(--text-black);
     font-family: var(--font-heading);
-    font-size: 0.75rem;
+    font-size: 0.8rem;
     font-weight: 700;
     letter-spacing: 2px;
     border: 2px solid var(--bg-white);
@@ -268,8 +268,8 @@ a {
 }
 
 h2 {
-    font-size: 2.2rem;
-    margin-bottom: 30px;
+    font-size: 2.5rem;
+    margin-bottom: 35px;
 }
 
 .text-black {
@@ -277,8 +277,8 @@ h2 {
 }
 
 .subtitle {
-    margin-top: -20px;
-    margin-bottom: 30px;
+    margin-top: -25px;
+    margin-bottom: 35px;
     opacity: 0.7;
     animation: fadeInUp 0.8s ease-out;
 }
@@ -287,7 +287,7 @@ h2 {
 .layout-split {
     display: flex;
     align-items: center;
-    gap: 40px;
+    gap: 45px;
 }
 
 .text-content {
@@ -295,8 +295,8 @@ h2 {
 }
 
 .text-content p {
-    font-size: 0.95rem;
-    margin-bottom: 15px;
+    font-size: 1rem;
+    margin-bottom: 18px;
     opacity: 0.8;
 }
 
@@ -316,7 +316,7 @@ h2 {
 /* --- GRIDID (PORTFOOLIO & GALERII) --- */
 .grid {
     display: grid;
-    gap: 25px;
+    gap: 28px;
 }
 
 .portfolio-grid {
@@ -417,19 +417,19 @@ h2 {
 
 .contact-form {
     max-width: 600px;
-    margin: 30px auto 0;
+    margin: 35px auto 0;
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 17px;
 }
 
 .contact-form input, .contact-form textarea {
     width: 100%;
-    padding: 12px;
+    padding: 13px;
     background: transparent;
     border: 1px solid #ccc;
     font-family: var(--font-body);
-    font-size: 0.9rem;
+    font-size: 0.95rem;
     color: var(--text-black);
     outline: none;
     transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
@@ -451,12 +451,12 @@ footer {
 }
 
 .footer-logo {
-    height: 60px;
-    margin-bottom: 15px;
+    height: 70px;
+    margin-bottom: 18px;
 }
 
 .social-links {
-    margin-bottom: 15px;
+    margin-bottom: 17px;
 }
 
 .social-links a {
@@ -474,7 +474,7 @@ footer {
 /* --- RESPONSIVE / MOBIIL --- */
 @media (max-width: 768px) {
     .navbar { 
-        padding: 15px;
+        padding: 13px;
         flex-wrap: wrap;
     }
     
@@ -496,7 +496,7 @@ footer {
     }
     
     .hero-content h1 { 
-        font-size: 8vw; 
+        font-size: 9vw; 
     }
     
     .layout-split { 
@@ -504,10 +504,10 @@ footer {
     }
     
     h2 { 
-        font-size: 1.8rem; 
+        font-size: 2rem; 
     }
     
     .section {
-        padding: 40px 5vw;
+        padding: 50px 5vw;
     }
 }

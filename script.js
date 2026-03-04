@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 function initializeSmoothScroll() {
-  const navLinks = document.querySelectorAll('.nav-links a[href^="#"], .logo a[href^="#"]');
+  const navLinks = document.querySelectorAll('.nav-links a[href^="#"], .logo a[href^="#"], .btn[href^="#"]');
   
   navLinks.forEach(link => {
     link.addEventListener('click', function(e) {
