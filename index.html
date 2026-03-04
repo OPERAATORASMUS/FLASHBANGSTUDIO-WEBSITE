@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="et">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flashbang Studio</title>
+    <title data-i18n="page_title">Flashbang Studio</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Syncopate:wght@700&family=Inter:wght@400;600;900&display=swap" rel="stylesheet">
 </head>
@@ -16,11 +16,15 @@
             </a>
         </div>
         <ul class="nav-links">
-            <li><a href="#meist">Meist</a></li>
-            <li><a href="#portfoolio">Portfoolio</a></li>
-            <li><a href="#galerii">Galerii</a></li>
-            <li><a href="#kontakt">Kontakt</a></li>
+            <li><a href="#meist" data-i18n="nav_about">Meist</a></li>
+            <li><a href="#portfoolio" data-i18n="nav_portfolio">Portfoolio</a></li>
+            <li><a href="#galerii" data-i18n="nav_gallery">Galerii</a></li>
+            <li><a href="#kontakt" data-i18n="nav_contact">Kontakt</a></li>
         </ul>
+        <div class="language-switcher">
+            <button class="lang-btn active" data-lang="en">EN</button>
+            <button class="lang-btn" data-lang="et">ET</button>
+        </div>
         <div class="menu-toggle">
             <span></span>
             <span></span>
@@ -32,17 +36,17 @@
         <div class="hero-content">
             <h1 class="glitch" data-text="FLASHBANG">FLASHBANG</h1>
             <h1 class="glitch outline" data-text="STUDIO">STUDIO</h1>
-            <p>LOOME VISUAALE, MIS JÄTAVAD JÄLJE.</p>
-            <a href="#portfoolio" class="btn">VAATA MEIE TÖID</a>
+            <p data-i18n="hero_tagline">LOOME VISUAALE, MIS JÄTAVAD JÄLJE.</p>
+            <a href="#portfoolio" class="btn" data-i18n="hero_button">VAATA MEIE TÖID</a>
         </div>
     </header>
 
     <section id="meist" class="section dark">
         <div class="container layout-split">
             <div class="text-content">
-                <h2>MEIST</h2>
-                <p>Oleme produktsioonifirma, mis on spetsialiseerunud teravale, dünaamilisele ja silmapaistvale visuaalsele sisule. Me ei karda eksperimenteerida ega piire nihutada. Meie eesmärk on lüüa pilt selgeks nagu välk.</p>
-                <p>Olgu selleks muusikavideo, reklaamklipp või brändifilm – me toome sinu visiooni ellu maksimaalse impaktiga.</p>
+                <h2 data-i18n="about_title">MEIST</h2>
+                <p data-i18n="about_text_1">Oleme produktsioonifirma, mis on spetsialiseerunud teravale, dünaamilisele ja silmapaistvale visuaalsele sisule. Me ei karda eksperimenteerida ega piire nihutada. Meie eesmärk on lüüa pilt selgeks nagu välk.</p>
+                <p data-i18n="about_text_2">Olgu selleks muusikavideo, reklaamklipp või brändifilm – me toome sinu visiooni ellu maksimaalse impaktiga.</p>
             </div>
             <div class="image-content border-img">
                 <div class="placeholder-img" style="background-image: url('https://images.unsplash.com/photo-1601506521937-0121a7fc2a6b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80');"></div>
@@ -52,30 +56,30 @@
 
     <section id="portfoolio" class="section light">
         <div class="container">
-            <h2 class="text-black">PORTFOOLIO</h2>
+            <h2 class="text-black" data-i18n="portfolio_title">PORTFOOLIO</h2>
             <div class="grid portfolio-grid">
                 <div class="grid-item">
                     <div class="item-overlay">
-                        <h3>PROJEKT ALPHA</h3>
-                        <span>Reklaam</span>
+                        <h3 data-i18n="project_alpha_title">PROJEKT ALPHA</h3>
+                        <span data-i18n="project_alpha_type">Reklaam</span>
                     </div>
                 </div>
                 <div class="grid-item">
                     <div class="item-overlay">
-                        <h3>ÖINE LEND</h3>
-                        <span>Muusikavideo</span>
+                        <h3 data-i18n="project_flight_title">ÖINE LEND</h3>
+                        <span data-i18n="project_flight_type">Muusikavideo</span>
                     </div>
                 </div>
                 <div class="grid-item">
                     <div class="item-overlay">
-                        <h3>BRÄND X</h3>
-                        <span>Dokumentaal</span>
+                        <h3 data-i18n="project_brand_title">BRÄND X</h3>
+                        <span data-i18n="project_brand_type">Dokumentaal</span>
                     </div>
                 </div>
                 <div class="grid-item">
                     <div class="item-overlay">
-                        <h3>KIIRENDUS</h3>
-                        <span>Promo</span>
+                        <h3 data-i18n="project_speed_title">KIIRENDUS</h3>
+                        <span data-i18n="project_speed_type">Promo</span>
                     </div>
                 </div>
             </div>
@@ -84,8 +88,8 @@
 
     <section id="galerii" class="section dark">
         <div class="container">
-            <h2>GALERII</h2>
-            <p class="subtitle">Kaadritagused ja hetked võtteplatsilt.</p>
+            <h2 data-i18n="gallery_title">GALERII</h2>
+            <p class="subtitle" data-i18n="gallery_subtitle">Kaadritagused ja hetked võtteplatsilt.</p>
             <div class="grid gallery-grid">
                 <div class="gallery-item placeholder-bg-1"></div>
                 <div class="gallery-item placeholder-bg-2"></div>
@@ -99,13 +103,13 @@
 
     <section id="kontakt" class="section light">
         <div class="container text-center">
-            <h2 class="text-black">ASTU LIGIMALE</h2>
-            <p class="text-black">Oled valmis järgmiseks suureks projektiks? Kirjuta meile.</p>
+            <h2 class="text-black" data-i18n="contact_title">ASTU LIGIMALE</h2>
+            <p class="text-black" data-i18n="contact_text">Oled valmis järgmiseks suureks projektiks? Kirjuta meile.</p>
             <form class="contact-form">
-                <input type="text" placeholder="SINU NIMI" required>
-                <input type="email" placeholder="E-MAIL" required>
-                <textarea rows="5" placeholder="PROJEKTI KIRJELDUS" required></textarea>
-                <button type="submit" class="btn btn-black">SAADA KIRI</button>
+                <input type="text" data-i18n-placeholder="contact_name_placeholder" placeholder="SINU NIMI" required>
+                <input type="email" data-i18n-placeholder="contact_email_placeholder" placeholder="E-MAIL" required>
+                <textarea rows="5" data-i18n-placeholder="contact_description_placeholder" placeholder="PROJEKTI KIRJELDUS" required></textarea>
+                <button type="submit" class="btn btn-black" data-i18n="contact_button">SAADA KIRI</button>
             </form>
         </div>
     </section>
@@ -118,9 +122,11 @@
                 <a href="#">VIMEO</a>
                 <a href="#">YOUTUBE</a>
             </div>
-            <p>&copy; 2024 FLASHBANG STUDIO. Kõik õigused kaitstud.</p>
+            <p data-i18n="footer_copyright">&copy; 2024 FLASHBANG STUDIO. Kõik õigused kaitstud.</p>
         </div>
     </footer>
 
+    <script src="translations.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
