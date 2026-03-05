@@ -27,6 +27,10 @@ body {
     overflow-x: hidden;
 }
 
+body.no-scroll {
+    overflow: hidden;
+}
+
 /* --- ANIMATIONS --- */
 @keyframes fadeInUp {
     from {
@@ -170,6 +174,19 @@ a {
     width: 25px;
     height: 3px;
     background: var(--text-white);
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.menu-toggle.open span:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+
+.menu-toggle.open span:nth-child(2) {
+    opacity: 0;
+}
+
+.menu-toggle.open span:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
 }
 
 /* --- KANGELANE (HERO) --- */
@@ -311,6 +328,18 @@ h2 {
     background-position: center;
     filter: grayscale(100%);
     border: 1px solid #333;
+}
+
+/* make the about image scale nicer on small screens */
+@media (max-width: 768px) {
+    .placeholder-img {
+        height: auto;
+        aspect-ratio: 16 / 9;
+        min-height: 150px;
+    }
+    .grid-item {
+        height: 200px;
+    }
 }
 
 /* --- GRIDID (PORTFOOLIO & GALERII) --- */
@@ -478,12 +507,40 @@ footer {
         flex-wrap: wrap;
     }
     
+    /* full-screen overlay nav when open */
     .nav-links { 
-        display: none; 
+        display: flex; 
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 30px;
+        background: rgba(0,0,0,0.85);
+        backdrop-filter: blur(6px);
+        padding: 0;
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 0.4s ease;
+        z-index: 1000;
     }
-    
+
+    .nav-links a {
+        font-size: 2rem;
+        padding: 20px 0;
+    }
+
+    .nav-links.active {
+        opacity: 1;
+        pointer-events: auto;
+    }
+
     .menu-toggle { 
         display: flex; 
+        z-index: 1100; /* above overlay */
     }
     
     .language-switcher {

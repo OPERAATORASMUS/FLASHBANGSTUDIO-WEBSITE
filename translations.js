@@ -33,7 +33,7 @@ const translations = {
     contact_description_placeholder: "PROJECT DESCRIPTION",
     contact_button: "SEND",
     
-    footer_copyright: "&copy; 2024 FLASHBANG STUDIO. All rights reserved.",
+    footer_copyright: "2026 FLASHBANG STUDIO. All rights reserved.",
   },
   
   et: {
@@ -70,6 +70,6 @@ const translations = {
     contact_description_placeholder: "PROJEKTI KIRJELDUS",
     contact_button: "SAADA KIRI",
     
-    footer_copyright: "&copy; 2024 FLASHBANG STUDIO. Kõik õigused kaitstud.",
+    footer_copyright: "2026 FLASHBANG STUDIO. Kõik õigused kaitstud.",
   }
 };

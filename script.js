@@ -20,6 +20,9 @@ document.addEventListener('DOMContentLoaded', function() {
   
   // Initialize smooth scrolling for navbar links
   initializeSmoothScroll();
+  
+  // Setup mobile menu toggle if present
+  initializeMobileMenu();
 });
 
 function initializeSmoothScroll() {
@@ -127,5 +130,46 @@ function setLanguage(lang) {
     if (button.getAttribute('data-lang') === lang) {
       button.classList.add('active');
     }
+  });
+  
+  // Update copyright year automatically
+  const copyrightElement = document.querySelector('[data-i18n="footer_copyright"]');
+  if (copyrightElement) {
+    const currentYear = new Date().getFullYear();
+    const text = copyrightElement.textContent;
+    const updatedText = text.replace(/\d{4}/, currentYear);
+    copyrightElement.textContent = updatedText;
+  }
+}
+
+// Mobile menu toggle logic
+function initializeMobileMenu() {
+  const menuToggle = document.querySelector('.menu-toggle');
+  const navLinks = document.querySelector('.nav-links');
+
+  if (!menuToggle || !navLinks) return;
+
+  const closeMenu = () => {
+    navLinks.classList.remove('active');
+    menuToggle.classList.remove('open');
+    document.body.classList.remove('no-scroll');
+  };
+
+  menuToggle.addEventListener('click', () => {
+    const opening = !navLinks.classList.contains('active');
+    navLinks.classList.toggle('active');
+    menuToggle.classList.toggle('open');
+    if (opening) {
+      document.body.classList.add('no-scroll');
+    } else {
+      document.body.classList.remove('no-scroll');
+    }
+  });
+
+  // hide menu when link clicked so it collapses on navigation
+  navLinks.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => {
+      closeMenu();
+    });
   });
 }
