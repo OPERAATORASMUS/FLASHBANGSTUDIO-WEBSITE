@@ -26,12 +26,12 @@ const translations = {
     gallery_title: "GALLERY",
     gallery_subtitle: "Behind the scenes and moments from set.",
     
-    contact_title: "GET IN TOUCH",
+    contact_title: "SECTION IN DEVELOPEMENT",
     contact_text: "Ready for your next big project? Write to us.",
     contact_name_placeholder: "YOUR NAME",
     contact_email_placeholder: "EMAIL",
     contact_description_placeholder: "PROJECT DESCRIPTION",
-    contact_button: "SEND",
+    contact_button: "IN DEVELOPEMENT",
     
     footer_copyright: "2026 FLASHBANG STUDIO. All rights reserved.",
   },
@@ -63,12 +63,12 @@ const translations = {
     gallery_title: "GALERII",
     gallery_subtitle: "Kaadritagused ja hetked võtteplatsilt.",
     
-    contact_title: "VÕTA MEIEGA ÜHENDUST",
+    contact_title: "SEKTSIOON VALMIMISEL",
     contact_text: "Oled valmis järgmiseks suureks projektiks? Kirjuta meile.",
     contact_name_placeholder: "SINU NIMI",
     contact_email_placeholder: "E-MAIL",
     contact_description_placeholder: "PROJEKTI KIRJELDUS",
-    contact_button: "SAADA KIRI",
+    contact_button: "VALMIMISEL",
     
     footer_copyright: "2026 FLASHBANG STUDIO. Kõik õigused kaitstud.",
   }
