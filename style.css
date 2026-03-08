@@ -76,17 +76,32 @@ body.no-scroll {
 
 .section {
     opacity: 0;
+<<<<<<< HEAD
     animation: fadeInUp 0.8s ease-out forwards;
 }
 
 .section.animate {
     animation: fadeInUp 0.8s ease-out;
+=======
+    will-change: opacity, transform;
+    animation: fadeInUp 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+}
+
+.section.animate {
+    will-change: opacity, transform;
+    animation: fadeInUp 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+>>>>>>> c651bcdd318c5174df555ec9a3602bfb4a31ce2c
 }
 
 h1, h2, h3 {
     font-family: var(--font-heading);
     text-transform: uppercase;
+<<<<<<< HEAD
     animation: fadeInUp 0.8s ease-out;
+=======
+    will-change: opacity, transform;
+    animation: fadeInUp 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+>>>>>>> c651bcdd318c5174df555ec9a3602bfb4a31ce2c
 }
 
 a {
@@ -96,6 +111,7 @@ a {
 }
 
 /* --- NAVIGATSIOON --- */
+<<<<<<< HEAD
 .navbar {
     position: fixed;
     top: 0;
@@ -114,6 +130,9 @@ a {
     height: 36px;
     filter: invert(0);
 }
+=======
+/* Removed custom navbar styles; Bootstrap now provides navigation styling */
+>>>>>>> c651bcdd318c5174df555ec9a3602bfb4a31ce2c
 
 .nav-links {
     list-style: none;
@@ -200,6 +219,10 @@ a {
     padding: 0 20px;
     opacity: 0;
     animation: fadeIn 1s ease-out 0.2s forwards;
+<<<<<<< HEAD
+=======
+    background-color: var(--bg-black);
+>>>>>>> c651bcdd318c5174df555ec9a3602bfb4a31ce2c
 }
 
 .hero-content {
@@ -218,6 +241,10 @@ a {
     line-height: 1;
     margin: 0;
     letter-spacing: -2px;
+<<<<<<< HEAD
+=======
+    color: var(--text-white);
+>>>>>>> c651bcdd318c5174df555ec9a3602bfb4a31ce2c
 }
 
 .hero-content h1.outline {
@@ -230,6 +257,21 @@ a {
     font-size: 1rem;
     letter-spacing: 4px;
     text-transform: uppercase;
+<<<<<<< HEAD
+=======
+    color: var(--text-white);
+}
+
+.hero-content .btn {
+    background: transparent;
+    color: var(--text-white);
+    border: 2px solid var(--text-white);
+}
+
+.hero-content .btn:hover {
+    background: var(--text-white);
+    color: var(--bg-black);
+>>>>>>> c651bcdd318c5174df555ec9a3602bfb4a31ce2c
 }
 
 .btn {
@@ -319,23 +361,53 @@ h2 {
 
 .image-content {
     flex: 1;
+<<<<<<< HEAD
+=======
+    min-width: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%; /* ensure it never collapses */
+>>>>>>> c651bcdd318c5174df555ec9a3602bfb4a31ce2c
 }
 
 .placeholder-img {
     width: 100%;
+<<<<<<< HEAD
     height: 400px;
     background-size: cover;
     background-position: center;
     filter: grayscale(100%);
     border: 1px solid #333;
+=======
+    height: auto;
+    /* use contain so entire image shows instead of cropping */
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: grayscale(100%);
+    border: none; /* remove outlines */
+    aspect-ratio: 16 / 9; /* maintain proportion */
+    box-shadow: 0 2px 10px rgba(0,0,0,0.4);
+>>>>>>> c651bcdd318c5174df555ec9a3602bfb4a31ce2c
 }
 
 /* make the about image scale nicer on small screens */
 @media (max-width: 768px) {
+<<<<<<< HEAD
+=======
+    .image-content {
+        width: 100%;
+    }
+>>>>>>> c651bcdd318c5174df555ec9a3602bfb4a31ce2c
     .placeholder-img {
         height: auto;
         aspect-ratio: 16 / 9;
         min-height: 150px;
+<<<<<<< HEAD
+=======
+        background-color: #111; /* fallback to ensure visible */
+>>>>>>> c651bcdd318c5174df555ec9a3602bfb4a31ce2c
     }
     .grid-item {
         height: 200px;
@@ -349,7 +421,13 @@ h2 {
 }
 
 .portfolio-grid {
+<<<<<<< HEAD
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+=======
+    /* allow narrower items on small phones and center them */
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    justify-content: center;
+>>>>>>> c651bcdd318c5174df555ec9a3602bfb4a31ce2c
 }
 
 .gallery-grid {
@@ -500,6 +578,7 @@ footer {
     text-decoration: underline;
 }
 
+<<<<<<< HEAD
 /* --- RESPONSIVE / MOBIIL --- */
 @media (max-width: 768px) {
     .navbar { 
@@ -528,6 +607,8 @@ footer {
         z-index: 1000;
     }
 
+=======
+>>>>>>> c651bcdd318c5174df555ec9a3602bfb4a31ce2c
     .nav-links a {
         font-size: 2rem;
         padding: 20px 0;
@@ -560,6 +641,71 @@ footer {
         flex-direction: column; 
     }
     
+<<<<<<< HEAD
+=======
+/* --- NAVBAR --- */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background: rgba(5, 5, 5, 0.9);
+    backdrop-filter: blur(10px);
+    padding: 14px 40px !important;
+}
+
+.navbar-brand img {
+    height: 36px;
+}
+
+.navbar-nav {
+    margin: 0 auto !important;
+}
+
+.navbar-nav .nav-link {
+    color: var(--text-white) !important;
+    font-family: var(--font-heading);
+    font-size: 0.75rem;
+    letter-spacing: 2px;
+    font-weight: 700;
+    margin: 0 12px;
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #888 !important;
+}
+
+.navbar-collapse {
+    background-color: transparent !important;
+}
+
+.lang-btn {
+    background: transparent !important;
+    border: 1px solid rgba(255, 255, 255, 0.3) !important;
+    color: var(--text-white) !important;
+    padding: 7px 11px !important;
+    font-family: var(--font-heading);
+    font-size: 0.7rem !important;
+    letter-spacing: 1px;
+    font-weight: 700 !important;
+    transition: all 0.3s ease;
+}
+
+.lang-btn:hover {
+    border-color: var(--text-white) !important;
+}
+
+.lang-btn.active {
+    border-color: var(--text-white) !important;
+}
+
+/* Hamburger X animation */
+.navbar-toggler {
+    padding: 0 !important;
+    border: none !important;
+}
+>>>>>>> c651bcdd318c5174df555ec9a3602bfb4a31ce2c
     h2 { 
         font-size: 2rem; 
     }
@@ -567,4 +713,7 @@ footer {
     .section {
         padding: 50px 5vw;
     }
+<<<<<<< HEAD
 }
+=======
+>>>>>>> c651bcdd318c5174df555ec9a3602bfb4a31ce2c
